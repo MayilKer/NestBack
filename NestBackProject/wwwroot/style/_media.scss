@@ -1,0 +1,113 @@
+@media (max-width: 1423px) {
+    #nav_bottom {
+            .hide{
+                display: none;
+            }
+            .nav_res{
+                width: 74%;
+                .navbarBottomMiddle{
+                    margin-left: 20px !important;
+                }
+            }
+    }
+    .fone{
+        .row{
+            :nth-child(2){
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 1356px){
+    footer{
+        .footer_bottom{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1125px){
+    #navbar{
+        .top{
+            display: none;
+        }
+    }
+    #nav_bottom{
+        display: none;
+    }
+    .search_res{
+        display: none;
+    }
+    .click{
+        display: block !important;
+    }
+    .middle{
+        .row{
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .middle{
+        .navbarItems{
+            .ic-hid{
+                display: none !important;
+            }
+        }
+        .respon_a{
+            text-align: center;
+        }
+        .img_ref{
+            display: inline-block;
+        }
+    }
+    .ic-hid{
+        display: none !important;
+    }
+    .download_app{
+        flex-direction: column !important;
+        a{
+            img{
+                max-width: 17% !important;
+                min-width: 17% !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 450px){
+    .newsletter_content{
+        h2{
+            font-size: 20px !important;
+        }
+    }
+    .newsletter .container-fluid .row .newsletter_inner form{
+        input{
+            padding-left: 17px !important;
+            font-size: 15px !important;
+        }
+        .btn{
+            padding: 20px 25px !important;
+            right: 23px !important;
+        }
+    }
+    .ic-hid2{
+        display: none !important;
+    }
+}
+
+@media(max-width: 568px){
+    .looking{
+        h2{
+            font-size: 30px !important;
+        }
+    }
+}
+
+@media (max-width: 882px){
+    #deals{
+        display: none;
+    }
+}

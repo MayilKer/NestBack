@@ -1,0 +1,1112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest - Multipurpose eCommerce HTML Template</title>
+    <link rel="stylesheet" href="~/style/bootstrap.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="~/images/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="~/style/style.css">
+    @RenderSection("Rel", false)
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <div class="sidebar">
+        <div class="sidebar-inner">
+            <div class="top">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="close" id="btn-close-navbar">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="search">
+                    <input type="text" placeholder="Search for items...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="sidebar-menu">
+                    <nav>
+                        <ul class="navigation">
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a asp-controller="Home">Home</a>
+                                <ul class="dropdown">
+                                    <li><a href="~#">Home 1</a></li>
+                                    <li><a href="~#">Home 2</a></li>
+                                    <li><a href="~#">Home 3</a></li>
+                                    <li><a href="~#">Home 4</a></li>
+                                    <li><a href="~#">Home 5</a></li>
+                                    <li><a asp-controller="Home">Home 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a asp-controller="Shop">Shop</a>
+                                <ul class="dropdown">
+                                    <li><a href="~#">Shop Grid - Right Sidebar</a></li>
+                                    <li><a href="~#">Shop Grid - Left Sidebar</a></li>
+                                    <li><a href="~#">Shop List - Right Sidebar</a></li>
+                                    <li><a href="~#">Shop List - Left Sidebar</a></li>
+                                    <li><a asp-controller="Shop">Shop - Wide</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="~#">Single Product</a>
+                                        <ul class="dropdown">
+                                            <li><a href="~#">Product – Right Sidebar</a></li>
+                                            <li><a href="~#">Product – Left Sidebar</a></li>
+                                            <li><a href="~#">Product – No Sidebar</a></li>
+                                            <li><a href="~#">Product – Vendor Info</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="~#">Shop - Filter</a></li>
+                                    <li><a href="~#">Shop - Wishlist</a></li>
+                                    <li><a href="~#">Shop - Cart</a></li>
+                                    <li><a href="~#">Shop - Checkout</a></li>
+                                    <li><a href="~#">Shop - Compare</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="~#">Shop Invoice</a>
+                                        <ul class="dropdown">
+                                            <li><a href="~#">Shop Invoice 1</a></li>
+                                            <li><a href="~#">Shop Invoice 2</a></li>
+                                            <li><a href="~#">Shop Invoice 3</a></li>
+                                            <li><a href="~#">Shop Invoice 4</a></li>
+                                            <li><a href="~#">Shop Invoice 5</a></li>
+                                            <li><a href="~#">Shop Invoice 6</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="~#">Vendors</a>
+                                <ul class="dropdown">
+                                    <li><a href="~#">Vendors Grid</a></li>
+                                    <li><a href="~#">Vendors List</a></li>
+                                    <li><a href="~#">Vendor Details 01</a></li>
+                                    <li><a href="~#">Vendor Details 02</a></li>
+                                    <li><a href="~#">Vendor Dashboard</a></li>
+                                    <li><a href="~#">Vendor Guide</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="~#">Mega Menu</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="~#">Women's Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="~#">Dresses</a></li>
+                                            <li><a href="~#">Blouses & Shirts</a></li>
+                                            <li><a href="~#">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="~#">Women's Sets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="~#">Men's Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="~#">Jackets</a></li>
+                                            <li><a href="~#">Casual Faux Leather</a></li>
+                                            <li><a href="~#">Genuine Leather</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="~#">Technology</a>
+                                        <ul class="dropdown">
+                                            <li><a href="~#">Gaming Laptops</a></li>
+                                            <li><a href="~#">Ultraslim Laptops</a></li>
+                                            <li><a href="~#">Tablets</a></li>
+                                            <li><a href="~#">Laptop Accessories</a></li>
+                                            <li><a href="~#">Tablet Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="~#">Blog</a>
+                                <ul class="dropdown">
+                                    <li><a href="~#">Blog Category Grid</a></li>
+                                    <li><a href="~#">Blog Category List</a></li>
+                                    <li><a href="~#">Blog Category Big</a></li>
+                                    <li><a href="~#">Blog Category Wide</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="~#">Single Product Layout</a>
+                                        <ul class="dropdown">
+                                            <li><a href="~#">Left Sidebar</a></li>
+                                            <li><a href="~#">Right Sidebar</a></li>
+                                            <li><a href="~#">No Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="~#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a asp-controller="about" asp-action="index">About Us</a></li>
+                                    <li><a asp-controller="Contact">Contact</a></li>
+                                    <li><a href="~#">My Account</a></li>
+                                    <li><a href="~#">Login</a></li>
+                                    <li><a href="~#">Register</a></li>
+                                    <li><a href="~#">Purchase Guide</a></li>
+                                    <li><a href="~#">Privacy Policy</a></li>
+                                    <li><a href="~#">Terms of Service</a></li>
+                                    <li><a href="~#">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="~#">Language</a>
+                                <ul class="dropdown">
+                                    <li><a href="~#">English</a></li>
+                                    <li><a href="~#">French</a></li>
+                                    <li><a href="~#">German</a></li>
+                                    <li><a href="~#">Spanish</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="info">
+                    <a href="~#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Our location
+                    </a>
+                    <a href="~#">
+                        <i class="fa-regular fa-user"></i>
+                        Log In / Sign Up
+                    </a>
+                    <a href="~#">
+                        <i class="fa-solid fa-headphones"></i>
+                        (+01) - 2345 - 6789
+                    </a>
+                </div>
+                <div class="socials">
+                    <h6>Follow Us</h6>
+                    <a href="~#">
+                        <img src="images/icon-facebook-white.svg" alt="">
+                    </a>
+                    <a href="~#">
+                        <img src="images/icon-twitter-white.svg" alt="">
+                    </a>
+                    <a href="~#">
+                        <img src="images/icon-instagram-white.svg" alt="">
+                    </a>
+                    <a href="~#">
+                        <img src="images/icon-pinterest-white.svg" alt="">
+                    </a>
+                    <a href="~#">
+                        <img src="images/icon-youtube-white.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="navbar">
+        <div class="container-fluid">
+            <div class="top">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="navbarTopLeft">
+                            <ul class="text-start ps-0">
+                                <li class="border-0">
+                                    <a asp-controller="About" asp-action="index">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        My Account
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Wishlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Order Tracking
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="navbarTopCenter ms-5">
+                            <marquee behavior="" direction="up" scrolldelay="200">
+                                Supper Value Deals - Save more with
+                                coupons
+                            </marquee>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="navbarTopRight">
+                            <ul class="d-flex justify-content-end">
+                                <li>
+                                    Need help? Call Us:
+                                    <strong class="text-brand"> + 1800 900</strong>
+                                </li>
+                                <li class="ms-4 me-4 dropTopRight">
+                                    <a href="~#">English</a>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <div class="drop_content">
+                                        <ul>
+                                            <li>
+                                                <a href="~#">
+                                                    <img src="~/images/flag-fr.png" alt="">
+                                                    Français
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~#">
+                                                    <img src="~/images/flag-dt.png" alt="">
+                                                    Deutsch
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~#">
+                                                    <img src="~/images/flag-ru.png" alt="">
+                                                    Pусский
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="me-4 dropTopRight">
+                                    <a href="~#">USD</a>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <div class="drop_content">
+                                        <ul>
+                                            <li>
+                                                <a href="~#">
+                                                    <img src="~/images/flag-fr.png" alt="">
+                                                    FRK
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~#">
+                                                    <img src="~/images/flag-dt.png" alt="">
+                                                    MAR
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~#">
+                                                    <img src="~/images/flag-ru.png" alt="">
+                                                    RUB
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="row">
+                    <div class="col-1 d-xl-none d-md-none d-lg-none click">
+                        <div class="navbar-collapse-button" id="btn-open-navbar">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-8 respon_a">
+                        <a class="img_ref" asp-controller="Home">
+                            <div class="navbarMidleImg">
+                                <img src="~/images/logo.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 search_res">
+                        <form action="#" class="d-flex search_middle">
+                            <span>All Categores <i class="fa-solid fa-angle-down ps-2"></i></span>
+                            <input type="text" placeholder="Search for items...">
+                            <i class="fas fa-search search"></i>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-5 col-3">
+                        <div class="navbarItems">
+                            <div class="itemBox ic-hid">
+                                <a class="iconMiddle" href="~#">
+                                    <img src="~/images/icon-compare.svg" alt="">
+                                    <span class="iconNum">3</span>
+                                </a>
+                                <a class="spanMiddle" href="~#">
+                                    Compare
+                                </a>
+                            </div>
+                            <div class="itemBox ic-hid2">
+                                <a class="iconMiddle" href="~#">
+                                    <img src="~/images/icon-heart.svg" alt="">
+                                    <span class="iconNum">6</span>
+                                </a>
+                                <a class="spanMiddle" href="~#">
+                                    Wishlist
+                                </a>
+                            </div>
+                            <div class="itemBox">
+                                <a class="iconMiddle" asp-controller="Cart">
+                                    <img src="~/images/icon-cart.svg" alt="">
+                                    <span class="iconNum" id="product_count">0</span>
+                                </a>
+                                <a class="spanMiddle" asp-controller="Cart">
+                                    Cart
+                                </a>
+                            </div>
+                            <div class="itemBox ic-hid">
+                                <a href="~#">
+                                    <img src="~/images/icon-user.svg" alt="">
+                                </a>
+                                <a class="spanMiddle" href="">Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section id="nav_bottom">
+        <div class="container-fluid">
+            <div class="bottom">
+                <div class="row">
+                    <div class="col-lg-3 hide">
+                        <div class="navbarBottomLeft">
+                            <a href="~#">
+                                <span><i class="fab fa-app-store-ios"></i></span>
+                                <span>
+                                    Brows All Categories
+                                </span>
+                                <i class="fa-solid fa-angle-down ps-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-0 pe-0 nav_res">
+                        <div class="navbarBottomMiddle">
+                            <ul class="d-flex">
+                                <li class="HotDeals">
+                                    <img src="~/images/icon-hot.svg" alt="">
+                                    <a href="~#">
+                                        Hot Deals
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a asp-controller="Home">
+                                        Home
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub_menu">
+                                        <li>
+                                            <a class="" href="">Home 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">Home 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">Home 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">Home 4</a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">Home 5</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Home">Home 6</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a target="_blank" asp-controller="About">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Shop">
+                                        Shop
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub_menu">
+                                        <li>
+                                            <a href="~#">
+                                                Shop Grid – Right Sidebar
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Shop Grid – Left Sidebar
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Shop List – Right Sidebar
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Shop List – Left Sidebar
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Shop">
+                                                Shop - Wide
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Single Product
+                                                <i class="fas fa-angle-right"></i>
+                                            </a>
+                                            <ul class="level_menu">
+                                                <li>
+                                                    <a href="~#">
+                                                        Product – Right Sidebar
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="~#">
+                                                        Product – Left Sidebar
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="~#">
+                                                        Product – No sidebar
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="~#">
+                                                        Product – Vendor Infor
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Shop – Filter
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Shop – Wishlist
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Shop – Cart
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Shop – Checkout
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Shop – Compare
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Shop Invoice
+                                                <i class="fas fa-angle-right"></i>
+                                            </a>
+                                            <ul class="level_menu">
+                                                <li>
+                                                    <a href="~#">
+                                                        Shop Invoice 1
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="~#">
+                                                        Shop Invoice 2
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="~#">
+                                                        Shop Invoice 3
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="~#">
+                                                        Shop Invoice 4
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Vendors
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub_menu">
+                                        <li>
+                                            <a href="~#">
+                                                Vendors Grid
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Vendors List
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Vendor Details 01
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Vendor Details 02
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Vendor Dashboard
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Vendor Guide
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li style="position: static;">
+                                    <a href="~#">
+                                        Mega menu
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="mega-menu">
+                                        <li class="sub-mega-menu">
+                                            <a href="~#">Fruit & Vegetables</a>
+                                            <ul>
+                                                <li><a href="~#">Meat & Poultry</a></li>
+                                                <li><a href="~#">Fresh Vegetables</a></li>
+                                                <li><a href="~#">Herbs & Seasonings</a></li>
+                                                <li><a href="~#">Cuts & Sprouts</a></li>
+                                                <li><a href="~#">Exotic Fruits & Veggies</a></li>
+                                                <li><a href="~#">Packaged Produce</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-mega-menu">
+                                            <a href="~#">Breakfast & Dairy</a>
+                                            <ul>
+                                                <li><a href="~#">Milk & Flavoured Milk</a></li>
+                                                <li><a href="~#">Butter and Margarine</a></li>
+                                                <li><a href="~#">Eggs Substitutes</a></li>
+                                                <li><a href="~#">Marmalades</a></li>
+                                                <li><a href="~#">Sour Cream</a></li>
+                                                <li><a href="~#">Cheese</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-mega-menu">
+                                            <a href="~#">Meat & Seafood</a>
+                                            <ul>
+                                                <li><a href="~#">Breakfast Sausage</a></li>
+                                                <li><a href="~#">Dinner Sausage</a></li>
+                                                <li><a href="~#">Chicken</a></li>
+                                                <li><a href="~#">Sliced Deli Meat</a></li>
+                                                <li><a href="~#">Wild Caught Fillets</a></li>
+                                                <li><a href="~#">Crab and Shellfish</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-mega-menu mega-img">
+                                            <div class="menu-banner-wrapper">
+                                                <a href="~#">
+                                                    <img src="~/images/banner-menu.png" alt="">
+                                                </a>
+                                                <div class="content">
+                                                    <h4>Hot Deals</h4>
+                                                    <h3>Don't miss <br> Trending</h3>
+                                                    <p>Save to 50%</p>
+                                                    <button class="mega-btn" type="button">Shop now</button>
+                                                </div>
+                                                <div class="discount">
+                                                    <h3>
+                                                        <span>25%</span>
+                                                        off
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Blog
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <ul class="sub_menu">
+                                            <li>
+                                                <a href="~#">
+                                                    Blog Category Grid
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~#">
+                                                    Blog Category List
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~#">
+                                                    Blog Category Big
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~#">
+                                                    Blog Category Wide
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="~#">
+                                                    Single Post
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                                <ul class="level_menu">
+                                                    <li>
+                                                        <a href="~#">
+                                                            Left Sidebar
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="~#">
+                                                            Right Sidebar
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="~#">
+                                                            No Sidebar
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Pages
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub_menu">
+                                        <li>
+                                            <a asp-controller="About">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Contact">
+                                                Contact
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                My Account
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Login
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Register
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Purchase Guide
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Privacy Policy
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                Terms of Service
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="~#">
+                                                404 Page
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a asp-controller="Contact">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="navbarBottomRight d-flex">
+                            <img src="~/images/icon-headphone.svg" alt="">
+                            <p>
+                                1900 - 888
+                                <span>
+                                    24/7 Support Center
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @RenderBody()
+    <footer>
+        <div class="footer_top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2" data-aos="fade-up" data-aos-duration="500">
+                        <div class="top_start">
+                            <div class="logo">
+                                <a asp-controller="Home">
+                                    <img src="~/images/logo.svg" alt="">
+                                </a>
+                                <p>
+                                    Awesome grocery store website template
+                                </p>
+                            </div>
+                            <ul class="contact_info">
+                                <li>
+                                    <img src="~/images/icon-location.svg" alt="">
+                                    <strong>
+                                        Address:
+                                    </strong>
+                                    <span>
+                                        5171 W Campbell Ave Kent, Utah 53127 United States
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="~/images/icon-contact.svg" alt="">
+                                    <strong>
+                                        Call Us:
+                                    </strong>
+                                    <span>
+                                        (+91) - 540-025-124553
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="~/images/icon-email-2.svg" alt="">
+                                    <strong>
+                                        Email:
+                                    </strong>
+                                    <span>
+                                        sale@Nest.com
+                                    </span>
+                                </li>
+                                <li>
+                                    <img src="~/images/icon-clock.svg" alt="">
+                                    <strong>
+                                        Hours:
+                                    </strong>
+                                    <span>
+                                        10:00 - 18:00, Mon - Sat
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2" data-aos="fade-up" data-aos-duration="600">
+                        <div class="top_middle">
+                            <h4>
+                                Company
+                            </h4>
+                            <ul class="footer_list">
+                                <li>
+                                    <a asp-controller="About">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Delivery Information
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Support Center
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Careers
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2" data-aos="fade-up" data-aos-duration="700">
+                        <div class="top_middle">
+                            <h4>
+                                Account
+                            </h4>
+                            <ul class="footer_list">
+                                <li>
+                                    <a href="~#">
+                                        Sign In
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        View Cart
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        My Wishlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Track My Order
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Help Ticket
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Shipping Details
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Compare products
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2" data-aos="fade-up" data-aos-duration="800">
+                        <div class="top_middle">
+                            <h4>
+                                Corporate
+                            </h4>
+                            <ul class="footer_list">
+                                <li>
+                                    <a href="~#">
+                                        Become a Vendor
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Affiliate Program
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Farm Business
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Farm Careers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Our Suppliers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Accessibility
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Promotions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2" data-aos="fade-up" data-aos-duration="900">
+                        <div class="top_middle">
+                            <h4>
+                                Company
+                            </h4>
+                            <ul class="footer_list">
+                                <li>
+                                    <a href="~#">
+                                        Popular
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Milk & Flavoured Milk
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Butter and Margarine
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Eggs Substitutes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Marmalades
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Sour Cream and Dips
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~#">
+                                        Tea & Kombucha
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="top_links">
+                            <h4>
+                                Install App
+                            </h4>
+                            <p>
+                                From App Store or Google Play
+                            </p>
+                            <div class="download_app">
+                                <a href="~#">
+                                    <img src="~/images/app-store.jpg" alt="">
+                                </a>
+                                <a href="~#">
+                                    <img src="~/images/google-play.jpg" alt="">
+                                </a>
+                            </div>
+                            <p>
+                                Secured Payment Gateways
+                            </p>
+                            <img src="~/images/payment-method.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom mt-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="foot_bottom_left">
+                            <p>
+                                © 2021,
+                                <strong class="own_color">Nest</strong>
+                                - HTML Ecommerce Template
+                                <br>
+                                All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="foot_bottom_middle">
+                            <div class="bottom_middle me-4">
+                                <img class="me-3" src="~/images/phone-call.svg" alt="">
+                                <p>
+                                    1900 - 6666
+                                    <span>
+                                        Working 8:00 - 22:00
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="bottom_middle">
+                                <img class="me-3" src="~/images/phone-call.svg" alt="">
+                                <p>
+                                    1900 - 6666
+                                    <span>
+                                        Working 8:00 - 22:00
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-end">
+                        <div class="foot_bottom_right">
+                            <div class="phone_social_media">
+                                <h6>
+                                    Follow Us
+                                </h6>
+                                <a href="~#">
+                                    <img src="~/images/icon-facebook-white.svg" alt="">
+                                </a>
+                                <a href="~#">
+                                    <img src="~/images/icon-twitter-white.svg" alt="">
+                                </a>
+                                <a href="~#">
+                                    <img src="~/images/icon-instagram-white.svg" alt="">
+                                </a>
+                                <a href="~#">
+                                    <img src="~/images/icon-pinterest-white.svg" alt="">
+                                </a>
+                                <a href="~#">
+                                    <img src="~/images/icon-youtube-white.svg" alt="">
+                                </a>
+                            </div>
+                            <p>
+                                Up to 15% discount on your first subscribe
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @RenderSection("Script", false)
+    @RenderSection("Slick",false)
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/js/basket.js"></script>
+    <script src="~/js/aos.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+.page_content {
+    .container {
+        .row {
+            h1 {
+                font-size: 48px;
+            }
+
+            h5 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.google_map {
+    .container-fluid {
+        .map {
+            p {
+                iframe {
+                    border-radius: 15px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+#info {
+    .container {
+        .row {
+            .info_top {
+                margin-bottom: 50px;
+
+                .info_box {
+                    font-size: 14px;
+                    color: #7e7e7e;
+
+                    h4 {
+                        margin-bottom: 15px;
+                        font-family: "Quicksand", sans-serif;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    .btn_info {
+                        display: inline-block;
+                        border-radius: 5px;
+                        padding: 8px 18px;
+                        font-size: 12px;
+                        text-transform: none;
+                        line-height: 1.8;
+                        background-color: #3bb77e;
+                        margin-top: 20px;
+                        color: #fff;
+                        font-family: "Quicksand", sans-serif;
+                        font-weight: bold;
+                        transition: .3s;
+                        &:hover{
+                            background-color: #FDC040;
+                        }
+                        i {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .info_bottom {
+                .row {
+                    .info_left {
+                        .input-style {
+                            margin-bottom: 20px;
+
+                            input {
+                                box-shadow: none;
+                                padding-left: 20px;
+                                font-size: 16px;
+                                width: 100%;
+                                border: 1px solid #ececec;
+                                border-radius: 10px;
+                                height: 64px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+
+                        .text-area-style {
+                            margin-bottom: 30px;
+
+                            textarea {
+                                box-shadow: none;
+                                padding: 10px 10px 10px 20px;
+                                font-size: 16px;
+                                width: 100%;
+                                min-height: 200px;
+                                border: 1px solid #ececec;
+                                border-radius: 10px;
+                                height: 50px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+
+                        .submit {
+                            font-size: 17px;
+                            font-weight: 500;
+                            padding: 20px 40px;
+                            color: #ffffff;
+                            border: none;
+                            background-color: #253D4E;
+                            border-radius: 10px;
+                            font-family: "Quicksand", sans-serif;
+                            transition: .3s;
+                            &:hover{
+                                background-color: #3bb77e;
+                            }
+                        }
+                    }
+                }
+                .input_right_img{
+                    width: 100%;
+                    border-radius: 15px;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}

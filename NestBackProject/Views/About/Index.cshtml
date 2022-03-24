@@ -1,0 +1,404 @@
+﻿@model AboutVM
+<div class="page-header">
+    <div class="container-fluid">
+        <div class="breadcrumb mb-0">
+            <a asp-controller="Home">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+            <span>
+                <i class="fa-solid fa-angle-right"></i>
+            </span>
+            Pages
+            <span>
+                <i class="fa-solid fa-angle-right"></i>
+            </span>
+            About us
+        </div>
+    </div>
+</div>
+<div class="page_content pt-5">
+    <div class="container-lg container">
+        <div class="row">
+            <div class="col-lg-10 m-auto">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="main_img">
+                            <img src="~/images/@Model.Abouts.Img" alt="" class="mb-md-3 mb-lg-0 mb-sm-4">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="slider_section ps-4">
+                            <h2>
+                                Welcome to Nest
+                            </h2>
+                            <p class="mb-4">
+                                @Model.Abouts.Content
+                            </p>
+                            <p class="mb-5">
+                                @Model.Abouts.Content2
+                            </p>
+                            <div class="carusel">
+                                <div class="autoplay">
+                                    @foreach (AboutSlider aboutSlider in Model.Abouts.AboutSliders)
+                                    {
+                                        <div><img src="~/images/@aboutSlider.Img" alt=""></div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="about_middle">
+    <div class="container-lg">
+        <h2>
+            What We Provide?
+        </h2>
+        <div class="row gy-5 mb-5">
+            @foreach (Provide provide in Model.Provides)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="about_box">
+                        <img src="~/images/@provide.Img" alt="">
+                        <h4>
+                            @provide.Title
+                        </h4>
+                        <p>
+                            @provide.Content
+                        </p>
+                        <a href="">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<section id="partner">
+    <div class="container-lg container">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-7">
+                <div class="double_image">
+                    <img src="~/images/about-5.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="partner_right">
+                    <h4>
+                        Our performance
+                    </h4>
+                    <h1>
+                        @Model.Perfomance.Title
+                    </h1>
+                    <p>
+                        @Model.Perfomance.Content
+                    </p>
+                    <p>
+                        @Model.Perfomance.Content2
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (History history in Model.Histories)
+            {
+                <div class="col-lg-4">
+                    <div class="partner_bottom">
+                        <h3>
+                            @history.Title
+                        </h3>
+                        <p>
+                            @history.Content
+                        </p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<div class="about_numbers mt-5">
+    <div class="container-fluid">
+        <div class="row about_count">
+            <div class="col-lg-1-5 col-md-6 text-center zet">
+                <div class="count_content">
+                    <h1>
+                        <span>
+                            12
+                        </span>
+                        +
+                    </h1>
+                    <h4>
+                        Glorious years
+                    </h4>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-6 text-center zet">
+                <div class="count_content">
+                    <h1>
+                        <span>
+                            32
+                        </span>
+                        +
+                    </h1>
+                    <h4>
+                        Happy clients
+                    </h4>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-6 text-center zet">
+                <div class="count_content">
+                    <h1>
+                        <span>
+                            52
+                        </span>
+                        +
+                    </h1>
+                    <h4>
+                        Projects complete
+                    </h4>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-6 text-center zet">
+                <div class="count_content">
+                    <h1>
+                        <span>
+                            77
+                        </span>
+                        +
+                    </h1>
+                    <h4>
+                        Projects complete
+                    </h4>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-6 text-center zet">
+                <div class="count_content">
+                    <h1>
+                        <span>
+                            11
+                        </span>
+                        +
+                    </h1>
+                    <h4>
+                        Projects complete
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="our_team">
+    <div class="container-lg">
+        <h2>
+            Our Team
+        </h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <h6>
+                    Our Team
+                </h6>
+                <h1>
+                    Meet Our Expert Team
+                </h1>
+                <p>
+                    Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon
+                    sequata congue idsem. Maecenas malesuada faucibus finibus.
+                </p>
+                <p>
+                    Proin ullamcorper pretium orci. Donec necscele risque leo. Nam massa dolor imperdiet neccon
+                    sequata congue idsem. Maecenas malesuada faucibus finibus.
+                </p>
+                <a href="#" class="btn">
+                    View All Members
+                </a>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="team_card">
+                            <img src="~/images/about-6.png" alt="">
+                            <div class="content text-center">
+                                <h4>
+                                    H. Merinda
+                                </h4>
+                                <span>
+                                    CEO & Co-Founder
+                                </span>
+                                <div class="social_network">
+                                    <a href="">
+                                        <img src="~/images/icon-facebook-brand.svg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="~/images/icon-twitter-brand.svg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="~/images/icon-instagram-brand.svg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="~/images/icon-youtube-brand.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="team_card">
+                            <img src="~/images/about-8.png" alt="">
+                            <div class="content text-center">
+                                <h4>
+                                    H. Merinda
+                                </h4>
+                                <span>
+                                    CEO & Co-Founder
+                                </span>
+                                <div class="social_network">
+                                    <a href="">
+                                        <img src="~/images/icon-facebook-brand.svg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="~/images/icon-twitter-brand.svg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="~/images/icon-instagram-brand.svg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img src="~/images/icon-youtube-brand.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="newsletter">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="newsletter_inner">
+                    <div class="newsletter_content">
+                        <h2>
+                            Stay home & get your daily
+                            <br>
+
+                            needs from our shop
+
+                        </h2>
+                        <p>
+                            Start You'r Daily Shopping with
+                            <span>
+                                Nest Mart
+                            </span>
+                        </p>
+                        <form action="">
+                            <input type="email" placeholder="Your email address">
+                            <button class="btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <img src="~/images/banner-13.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="featured">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-1.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Best offers
+                        </h3>
+                        <p>
+                            Orders $50 or more
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-2.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Free delivery
+                        </h3>
+                        <p>
+                            24/7 services
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-3.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Great daily deal
+                        </h3>
+                        <p>
+                            When you sign up
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-4.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Wide assortment
+                        </h3>
+                        <p>
+                            Mega Discounts
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-5.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Easy returns
+                        </h3>
+                        <p>
+                            Within 30 days
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Rel
+{
+    <link rel="stylesheet" type="text/css" href="~/slick/slick.css"; />
+    <link rel="stylesheet" type="text/css" href="~/slick/slick-theme.css"; />
+}
+
+@section Script
+{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="~/slick/slick.min.js"></script>
+    <script src="~/js/aboutslider.js"></script>
+}

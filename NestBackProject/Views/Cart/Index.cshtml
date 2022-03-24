@@ -1,0 +1,265 @@
+﻿<div class="page-header">
+    <div class="container-fluid">
+        <div class="breadcrumb mb-0">
+            <a asp-controller="Home">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+            <span>
+                <i class="fa-solid fa-angle-right"></i>
+            </span>
+            Pages
+            <span>
+                <i class="fa-solid fa-angle-right"></i>
+            </span>
+            Cart
+        </div>
+    </div>
+</div>
+<div class="cart_main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="main_top">
+                <div class="col-lg-8 mb-4">
+                    <h1>
+                        Your Cart
+                    </h1>
+                    <div class="d-flex justify-content-between">
+                        <h6 class="text_body">
+                            There are
+                            <span id="proc">
+                                0
+                            </span>
+                            products in your cart
+                        </h6>
+                        <h6 class="text_body">
+                            <a href="~#" class="delete_all">
+                                <i class="fa-solid fa-trash-can"></i>
+                                Clear Cart
+                            </a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="cart_table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Count</th>
+                                <th scope="col">ID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart_action d-flex justify-content-between mt-4 mb-4">
+                    <a asp-controller="Shop">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                        Continue Shopping
+                    </a>
+                    <a href="~#">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        Update Cart
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="border">
+                    <div class="table_res">
+                        <table>
+                            <tr>
+                                <td class="total_left">
+                                    <h6 class="text-muted">
+                                        Subtotal
+                                    </h6>
+                                </td>
+                                <td class="total_right">
+                                    <h4 class="text-end own_color">
+                                        $12.31
+                                    </h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="total_left">
+                                    <h6 class="text-muted">
+                                        Shipping
+                                    </h6>
+                                </td>
+                                <td class="total_right">
+                                    <h5 class="text-end">
+                                        Free
+                                    </h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="total_left">
+                                    <h6 class="text-muted">
+                                        Estimate for
+                                    </h6>
+                                </td>
+                                <td class="total_right">
+                                    <h5 class="text-end">
+                                        United Kingdom
+                                    </h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="total_left">
+                                    <h6 class="text-muted">
+                                        Total
+                                    </h6>
+                                </td>
+                                <td class="total_right">
+                                    <h4 class="text-end own_color">
+                                        $12.31
+                                    </h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="~#">
+                        Proceed To CheckOut
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="newsletter">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="newsletter_inner">
+                    <div class="newsletter_content">
+                        <h2>
+                            Stay home & get your daily
+                            <br>
+
+                            needs from our shop
+
+                        </h2>
+                        <p>
+                            Start You'r Daily Shopping with
+                            <span>
+                                Nest Mart
+                            </span>
+                        </p>
+                        <form action="">
+                            <input type="email" placeholder="Your email address">
+                            <button class="btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <img src="~/images/banner-9.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="featured">
+    <div class="container-fluid">
+        <div class="row gy-5">
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-1.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Best offers
+                        </h3>
+                        <p>
+                            Orders $50
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-2.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Free delivery
+                        </h3>
+                        <p>
+                            24/7 services
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-3.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Great deal
+                        </h3>
+                        <p>
+                            When you sign
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-4.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Wide goods
+                        </h3>
+                        <p>
+                            Mega Discounts
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-5.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Easy returns
+                        </h3>
+                        <p>
+                            Within 30 days
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-none">
+                <div class="banner_left">
+                    <div class="banner_icon">
+                        <img src="~/images/icon-6.svg" alt="">
+                    </div>
+                    <div class="banner_text">
+                        <h3>
+                            Safe delivery
+                        </h3>
+                        <p>
+                            Within 30 days
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Script{ 
+    <script src="~/js/basketshow.js"></script>
+}
